@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Bree';
+    src: url('../fonts/BreeSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roberto Bold';
+    src: url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roberto Light';
+    src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+.bree {
+    font-family: 'Bree';
+}
+
+.rob_bold {
+    font-family: 'Roberto Bold';
+}
+
+.rob_light {
+    font-family: 'Roberto Light';
+}
+
+.size10 {
+    font-size: 10px;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.padding0 {
+    padding: 0px;
+}
+
+.bodybg {
+    background-color: #fff;
+}
+
+.notification {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.white_f {
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: #FFF:
+}
+
+.red_f {
+    color: darkred;
+}
+
+.btn-red {
+    background-color: red;
+    color: #DDD;
+}
+
+.btn-red:hover {
+    background-color: red;
+    color: #DDD;
+}
+
+.green {
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.green_f {
+    color: green;
+}
+
+.btn-green {
+    background-color: green;
+    color: #DDD;
+}
+
+.btn-green:hover {
+    background-color: green;
+    color: #DDD;
+}
+
+.orange {
+    background-color: darkorange;
+}
+
+.orange_f {
+    color: darkorange;
+}
+
+.rose {
+    background-color: mistyrose;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.grey {
+    background-color: #AAA;
+}
+
+.grey_f {
+    color: #AAA;
+}
+
+.btn-dark {
+    background-color: #333;
+    color: #DDD;
+}
+
+.btn-dark:hover {
+    background-color: #444;
+    color: #DDD;
+}
+
+.btn-clear {
+    background: none;
+}
+
+.btn-clear:hover {
+    background-color: #DFDFDF;
+}
+
+.btn-circle {
+    border-radius: 50px;
+}
+
+.modal-content {
+    display: block;
+    overflow: hidden;
+    width: 30vw;
+}
+
+.closeButton {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    height: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #222;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 15px -5px rgba(0, 0, 0, 0.0);
+    color: #DDD;
+    font-size: 8px;
+    z-index: 101;
+}
+
+.shadow {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 15px -5px rgba(0, 0, 0, 0.0);
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.noRadius {
+    border-radius: 0px;
+}
+
+.noBorder {
+    border: none;
+}

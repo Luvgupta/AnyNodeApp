@@ -1,0 +1,57 @@
+.index-container {
+    padding-top: 10px;
+}
+
+.vehicleSearch {
+    box-shadow: none;
+}
+
+.vehicleSearch .list-group-item {
+    border: none;
+    padding: 0px;
+}
+
+.vehicleList {
+    min-height: 20vh;
+    resize: vertical;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.vehicleList span:first-child {
+    font-family: "Arial";
+}
+
+.index-map-view {
+    height: 50vh;
+    width: 100%;
+}
+
+.alert-listing {
+    height: 53vh;
+    resize: vertical;
+    overflow-y: auto;
+    font-family: "Arial";
+    padding: 0px;
+}
+
+.alert-listing .list-group-item:first-child {
+    background-color: #428bca;
+    color: white;
+    border: none;
+}
+.alert-listing .list-group-item {
+    background-color: #EEE;
+    padding: 10px;
+}
+
+.unreadAlert.list-group-item {
+    font-family: "Bree";
+    background-color: white;
+}
+
+.alert-date {
+    margin: 3px;
+}
