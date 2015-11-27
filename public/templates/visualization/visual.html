@@ -1,0 +1,83 @@
+<div class="container-fluid index-container">
+    <div class="col-md-2">
+        <div class="list-group vehicleSearch">
+            <div class="list-group-item">
+                <div class="input-group margin-bottom-sm">
+                    <input type="text" placeholder="Search" class="form-control" ng-model="vSearch" ng-change="filterVehicles()">
+                    <span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group vehicleList shadow">
+            <a class="list-group-item" ng-repeat="d in searchResults" ng-class="{active:selectedDevice.vid == d.vid}" ng-click="selectDevice(d)" href="#">
+                <span>{{d.registrationNumber}}</span>
+            </a>
+            <a class="list-group-item" ng-repeat="t in listOfTrucks" ng-click="truck(t)" href="#">{{ t }}</a>
+        </div>
+        <div class="list-group shadow">
+            <a class="list-group-item" ng-click="randomize(24)" href="#">Last 24</a>
+            <a class="list-group-item" ng-click="randomize(7)" href="#">Last Week</a>
+            <a class="list-group-item" ng-click="randomize(30)" href="#">Last month</a>
+            <a class="list-group-item" ng-click="randomize(12)" href="#">Last year</a>
+        </div>
+
+        <div class="list-group shadow">
+            <a class="list-group-item" ng-click="chartType = 'Bar'" href="#">Bar Chart</a>
+            <a class="list-group-item" ng-click="chartType = 'Line'" href="#">Line Chart</a>
+        </div>
+
+        <div class="list-group vehicleSearch">
+            <div class="list-group-item">
+                <center><span>&copy; CAPIOT 2015</span></center>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div class="well well-sm">
+            <span class="label label-default">Trucks selected</span>
+            <div class="btn-group btn-group-xs" ng-repeat="t in trucksSelectedForComparison track by $index">
+                <button class="btn btn-link" ng-click="removeTruck($index)">{{ t }}</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Distance graph</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart-base" chart-type="chartType" chart-data="graph.dist.data" chart-labels="graph.dist.labels" chart-series="graph.dist.series" chart-legend="true" chart-click="graph.dist.onClick">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Fuel graph</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart-base" chart-type="chartType" chart-data="graph.fuel.data" chart-labels="graph.fuel.labels" chart-series="graph.fuel.series" chart-legend="true" chart-click="graph.fuel.onClick">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Speed graph</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart-base" chart-type="chartType" chart-data="graph.speed.data" chart-labels="graph.speed.labels" chart-series="graph.speed.series" chart-legend="true" chart-click="graph.speed.onClick">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Trip report</div>
+                    <div class="panel-body">
+                        <h1>Trip report</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

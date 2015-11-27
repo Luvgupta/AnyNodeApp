@@ -1,0 +1,85 @@
+.login-map-view {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/images/loginbg.jpg);
+}
+
+.loginbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 768px){
+    .login-margin {
+        margin-top: 0px;
+    }    
+}
+
+@media only screen and (min-width: 768px){
+    .login-margin {
+        margin-top: 20vh;
+        background-color: rgba(122, 204, 255, 0.7);
+    }    
+}
+
+.login-margin {
+    position: relative;
+    z-index: 120;
+    padding: 0 20px;
+}
+
+.login-margin h2 {
+    font-family: "Bree";
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 12vh;
+}
+
+.login-form {
+    background-color: #333;
+    padding: 40px 20px;
+}
+
+.login-form label {
+    color: white;
+    font-family: "Roberto Light";
+}
+
+.form-footer{
+    padding: 40px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.form-footer a{
+    color: white;
+    font-size: 1.5vh;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 10px;
+    color: #999;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

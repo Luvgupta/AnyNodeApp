@@ -1,0 +1,69 @@
+.admin-nav{
+    font-family: "Bree";
+    font-size: 13px;
+}
+
+.list-group-item.heading{
+    background-color: #222;
+    border: 1px solid #222;
+    color: white;
+    text-align: center;
+}
+
+.well.admin-modal{
+    background-color: #333;
+    background-image: none;
+    color: white;
+}
+
+.userList {
+    font-family: 'Roberto Light';
+    margin-top: 10px;
+}
+
+.admin-user-info-label{
+    font-family: 'Roberto Light';
+    font-weight: 500;
+}
+
+.userList th,
+.userList td {
+    text-align: center;
+    font-family: "Verdana";
+}
+
+.deviceList {
+    font-family: "Verdana";
+    margin-top: 10px;
+}
+
+.deviceList th {
+    text-align: center;
+}
+
+.auditList {
+    font-family: "Verdana";
+}
+
+.right-align {
+    text-align: right;
+    padding: 0.75em;
+}
+
+.modalfooter{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+.black-background {
+    background-color:#000000;
+}
+
+.white {
+    color:#ffffff;
+}
+
+.btn:hover{
+    color: gainsboro;
+}

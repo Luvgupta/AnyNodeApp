@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{ title }}</h3>
+</div>
+<div class="modal-body">
+    <center><datepicker ng-model="val.d" max-date="max" show-weeks="true" class="well well-sm"></datepicker></center>
+    <center><timepicker ng-model="val.t" hour-step="1" minute-step="10" show-meridian="true"></timepicker></center>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary pull-left" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,80 @@
+.alertDetails {
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    margin-left: 0px;
+}
+
+.alertDetails.ng-hide {
+    margin-left: -50vw;
+}
+
+.opacityAnim {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+.opacityAnim.ng-hide {
+    opacity: 0;
+}
+
+.searchResulst {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.searchResulst.ng-hide {
+    opacity: 0;
+    margin-left: -20vw
+}
+
+.deviceDetails {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+.deviceDetails.ng-hide {
+    opacity: 0;
+    margin-top: -15vh;
+}
+
+.toastAnimation {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    margin-bottom: 0px;
+}
+
+.toastAnimation.ng-hide {
+    margin-bottom: -5vw;
+    opacity: 0;
+}
+
+.playbackAnimation {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+.playbackAnimation.ng-hide {
+    opacity: 0;
+}
+
+.logoffanimation{
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    margin-top: 0px;
+}
+
+.logoffanimation.ng-hide{
+    margin-top: -20vh;
+    opacity: 0;
+}
+
+.sidemenuanimation{
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    margin-left: 0px;
+}
+
+.sidemenuanimation.ng-hide{
+    margin-left: -30vh;
+}
