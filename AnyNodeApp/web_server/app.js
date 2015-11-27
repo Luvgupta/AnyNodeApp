@@ -66,7 +66,7 @@ app.use('/b', backend);
 // start the server only if the dependency checks are met
 dependencyCheck.doStartupDependencyCheck(function (_d, _msg) {
     if (_d) {
-        server.listen(env.PORT || 80, null, null, function () {
+        server.listen(Process.env.PORT || 80, null, null, function () {
             log('Server listening at http://' + server.address().address + ':' + server.address().port);
         })
     } else {
