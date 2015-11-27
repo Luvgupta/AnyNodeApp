@@ -1,0 +1,1208 @@
+.card {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 3px;
+}
+
+.card2 {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dim {
+    opacity: 0.5;
+}
+
+.dimmer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    opacity: 0.8;
+    z-index: 1001;
+}
+
+.fuel {
+    background-image: url("/public/images/fuel.png");
+    background-size: 3.5rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    border-radius: 10rem;
+    border: 5px solid #16738F;
+}
+
+.speed {
+    background-image: url("/public/images/speedometer.png");
+    background-size: 3.5rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    border-radius: 10rem;
+    border: 5px solid #8A9B0F;
+}
+
+.navigation {
+    background-image: url("/public/images/navigation.png");
+    background-size: 3.5rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    border-radius: 10rem;
+    border: 5px solid #A9BF9B;
+}
+
+.overlay {
+    z-index: 100;
+}
+
+.map-view {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+	bottom: 40%;
+    z-index: 10;
+}
+
+.actionIcons {
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+    display: block;
+    font-family: "Roberto Light";
+}
+
+.actionButton {
+    position: relative;
+    background: none;
+    border: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.actionButton span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1vh;
+    height: 1vh;
+    border-radius: 2vh;
+    background-color: red;
+}
+
+
+/*
+TITLE
+*/
+
+.map-ctrl-overall-stats {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map-ctrl-overall-stats span {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.50);
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.map-ctrl-overall-stats span i {
+    font-size: 1rem;
+}
+
+
+/*
+ALERT ICONS
+*/
+
+.map-ctrl-alerts {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+    display: block;
+}
+
+.map-ctrl-alerts>.truck-alerts {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.2rem;
+    font-family: "Bree";
+}
+
+.map-ctrl-alerts>.truck-alerts>.value {
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    z-index: 200;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 0.3rem;
+    background-color: #ff6347;
+    color: #FFF;
+    font-family: "Roberto Light";
+    font-size: 0.7rem;
+}
+
+
+/*
+ALERT DETAILS
+*/
+
+.map-ctrl-alert-details {
+    position: absolute;
+    top: 8vh;
+    left: 2vw;
+    display: block;
+    width: 28rem;
+    font-family: "Roberto Light";
+}
+
+.map-ctrl-alert-details>div>.alertListing {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.map-ctrl-alert-details>div:nth-child(2) {
+    background-color: #fff;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li:nth-child(even) {
+    background-color: #EEE;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item {
+    padding: 0.6em;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: "Roberto Light";
+    height: auto;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item>div {
+    display: block;
+    width: 95%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item>div>.vnum {
+    font-size: 0.9rem;
+    display: block;
+    width: 50%;
+    float: left;
+    padding-right: 1rem;
+    color: #BBB;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item>div>.date {
+    font-size: 0.9rem;
+    padding-right: 0.2rem;
+    color: #BBB;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item>div>.message {
+    font-size: 0.9rem;
+    float: left;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.alert-item>.alert-unread {
+    display: block;
+    width: 0.6rem;
+    height: 1rem;
+    margin-top: 3%;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #7ACCFF;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.header {
+    padding: 0.6em;
+    background-color: #222;
+    color: #DDD;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.header>span {
+    font-family: "Roberto Light";
+    text-transform: capitalize;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.header>input {
+    border: none;
+    border-bottom: 1px solid #DDD;
+    background-color: #222;
+    color: #ddd;
+    margin-left: 2vw;
+    width: 60%;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.header button {
+    color: #fff;
+}
+
+.map-ctrl-alert-details>div>.alertListing>li.header>input:focus {
+    outline: none;
+}
+
+.map-ctrl-alert-details>.alertPagination {
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.map-ctrl-alert-details>.alertPagination>ul {
+    margin: 0px;
+}
+
+.map-ctrl-alert-details>.alert-single {
+    margin-top: 1rem;
+    font-family: "Roberto Light";
+    padding: 1rem;
+    display: block;
+    overflow: hidden;
+}
+
+.map-ctrl-alert-details>.alert-single>p {
+    margin-bottom: 1rem;
+    display: block;
+    overflow: hidden;
+}
+
+.map-ctrl-alert-details>.alert-single>p>span {
+    width: 60%;
+    float: left;
+}
+
+.map-ctrl-alert-details>.alert-single>p>span.header {
+    margin-right: 1rem;
+    text-transform: uppercase;
+    color: #888;
+    text-align: right;
+    font-size: 0.8rem;
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+
+/*
+OVERALL STATUS
+*/
+
+.map-ctrl-status {
+    position: absolute;
+    top: 9rem;
+    left: 2vw;
+    width: 30%;
+    background-color: #FFF;
+    margin-bottom: 1em;
+}
+
+.map-ctrl-status>.header {
+    border-bottom: 1px solid #CCC;
+    font-family: "Roberto Light";
+    padding: .7rem;
+    margin: 0 1rem;
+}
+
+.map-ctrl-status>.header .back {
+    font-size: 0.8rem;
+    color: dodgerblue;
+}
+
+.map-ctrl-status>.header .title {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.map-ctrl-status .status-content {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.map-ctrl-status .status-content>.fleetStatus {
+    overflow: hidden;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>span {
+    font-family: "Roberto Light";
+    margin-bottom: 0.2rem;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>.progress {
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>.progress-info>.progress-bar {
+    background: none;
+    background-color: #FFF;
+    border: none;
+    box-shadow: none;
+    color: #333;
+    text-align: left;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>.progress-info>.progress-bar>div {
+    display: block;
+    position: absolute;
+    height: auto;
+    font-family: "Roberto Light";
+    margin: 0.2rem;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>.progress-info>.progress-bar>div>p {
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+
+.map-ctrl-status .status-content>.fleetStatus>.progress-info>.progress-bar>div>p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: #AAA;
+}
+
+.map-ctrl-status .status-content h4 {
+    font-size: 0.9rem;
+    font-family: "Roberto Light";
+    font-weight: 400;
+    color: #555;
+}
+
+.map-ctrl-status .status-content .info-dial {
+    box-shadow: 0 1px 5px #999;
+    background: white;
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-family: "Roberto Light";
+}
+
+.map-ctrl-status .status-avg {
+    display: block;
+    color: #555;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-family: "Roberto Light";
+    float: left;
+}
+
+.map-ctrl-status .status-avg>p {
+    text-transform: uppercase;
+    color: #555;
+}
+
+.map-ctrl-status>.status-avg>.status {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block {
+    display: block;
+    float: left;
+    width: 8vw;
+    height: 6vh;
+    margin: 0.4rem 1rem;
+    padding: 0.5rem;
+}
+
+.map-ctrl-status>.status-avg>.tripstatus>.status-block {
+    display: block;
+    overflow: hidden;
+    width: 50%;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.value {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 40%;
+    float: left;
+    background-color: #7ACCFF;
+    border-radius: 2rem;
+    vertical-align: middle;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.value>p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0px;
+    color: #FFF;
+    padding-top: 0.3rem;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.direction {
+    display: block;
+    overflow: hidden;
+    height: 70%;
+    width: 60%;
+    float: right;
+    text-align: center;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.direction>span {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.header {
+    display: block;
+    overflow: hidden;
+    height: 30%;
+    width: 60%;
+    float: right;
+    text-align: center;
+    float: left;
+}
+
+.map-ctrl-status>.status-avg>.status>.status-block>.header>p {
+    font-size: 0.8rem;
+    margin: 0px;
+    color: #777;
+    font-family: "Roberto Light";
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block>.value {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 20%;
+    float: left;
+    border: 1px solid #555;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.1rem;
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block>.value>p:first-child {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0px;
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block>.value>p:last-child {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block>.header {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 30%;
+    padding-top: 1rem;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.map-ctrl-status>.status-avg>.status>.trip-block>.header>p {
+    font-size: 1.5rem;
+    margin: 0px;
+    color: #777;
+    padding: 0px;
+    font-family: "Roberto Light";
+}
+
+
+/*
+* Bottom left- details of selected truck
+*/
+
+.active-truck {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    width: 20vw;
+}
+
+.active-truck>.truck,
+.active-truck>.playback {
+    float: left;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    width: 100%;
+    font-family: "Roberto Light";
+}
+
+.active-truck>.truck>.title {
+    background-color: #333;
+    padding: 0.5vw;
+}
+
+.active-truck>.truck>.title>.titleMenu>button {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    color: #EEE;
+}
+
+.active-truck>.truck>.title>span:first-child {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1vw;
+    color: #EEE;
+}
+
+.active-truck>.truck>div {
+    padding: 1rem;
+}
+
+.active-truck>.truck>.info {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0.5vw;
+    font-family: "Roberto Light";
+}
+
+.active-truck>.truck>.info .map-controls .header {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+    font-size: 0.9vw;
+}
+
+.active-truck>.playback>.datepickers {
+    padding: 1rem;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.active-truck>.playback>.datepickers {
+    padding: 1rem;
+}
+
+.active-truck>.playback>.datepickers .header {
+    font-family: "Bree";
+}
+
+.active-truck>.playback>.datepickers .dateDisplay {
+    display: block;
+    padding: 0.5rem;
+    width: 80%;
+    float: left;
+}
+
+.active-truck>.playback>.datepickers .editDate {
+    width: 20%;
+    float: right;
+}
+
+.active-truck>.playback>.datepickers .search {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* 
+top middle
+ - truck details
+ - trip listing
+*/
+
+.infoBox {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    width: 30%;
+    z-index: 100;
+}
+
+.infoBox>.truck-details>.curr-truck-details {
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    border-radius: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.infoBox>.truck-details>.curr-truck-details div:first-child {
+    background-color: #333;
+    color: #ddd;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 60px 60px 0 0;
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 15px;
+    font-family: "Bree";
+    font-size: 1.5vh;
+}
+
+.infoBox>.truck-details>.curr-truck-details div:last-child {
+    background-color: #eee;
+    color: #333;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 0 0 60px 60px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 8px;
+    font-size: 1.5vh;
+}
+
+.infoBox>.truck-details>.curr-truck-details p {
+    line-height: 0.5rem;
+}
+
+
+/*
+* search results
+*/
+
+.searchResults {
+    position: absolute;
+    bottom: 30px;
+    left: 2.5rem;
+    width: 15%;
+    background-color: white;
+    border: 1px solid #333;
+    margin: 0px;
+}
+
+.searchResults .panel-heading {
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #333;
+    background-image: none;
+    color: #DDD;
+    border-radius: 0px;
+    font-family: "Bree";
+    font-size: 1.2rem;
+}
+
+.searchResults .panel-heading i {
+    float: right;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-family: "Roberto Light";
+}
+
+.searchResults .tripList {
+    max-height: 25vh;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.searchResults .tripList span {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: firebrick;
+}
+
+
+/*
+Find and truck listing
+*/
+
+.tripHistoryDetails {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 18%;
+    width: 15%;
+    margin: 0px;
+    max-height: 30vh;
+}
+
+.tripHistoryDetails .tripList {
+    max-height: 25vh;
+    overflow: auto;
+    width: 100%;
+}
+
+.tripHistoryDetails ul {
+    padding: 0px;
+    list-style: none;
+    border-radius: none;
+    width: 100%;
+}
+
+.tripHistoryDetails ul li {
+    padding: 5px;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.tripHistoryDetails ul li:hover {
+    background-color: #ddd;
+}
+
+.tripHistoryDetails ul li.active {
+    background-color: rgba(57, 57, 57, 0.85);
+    color: white;
+}
+
+.damnPlayer {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 34%;
+    margin: 0px;
+    max-height: 30vh;
+}
+
+.damnPlayer center {
+    margin: 10px;
+}
+
+
+/*
+Find and truck listing
+*/
+
+.map-ctrl-right {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 20%;
+}
+
+.map-ctrl-find {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.map-ctrl-find input {
+    border: none;
+    font-family: "Roberto Light";
+    font-size: 12px;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.map-ctrl-find input:focus {
+    outline: none;
+}
+
+.map-ctrl-find button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    font-family: "Roberto Light";
+    color: #000;
+    background-color: #FFF;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.map-ctrl-find .search {
+    color: #999;
+}
+
+.map-ctrl-find-results {
+    margin-top: 2px;
+    display: block;
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.map-ctrl-find-results>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.map-ctrl-find-results>ul>li {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    font-family: "Roberto Light";
+    border-left: 5px solid #FFF;
+}
+
+.map-ctrl-find-results>ul>li:nth-child(even) {
+    background-color: #EEE;
+    border-left: 5px solid #EEE;
+}
+
+.map-ctrl-find-results>ul>li:hover {
+    border-left: 5px solid #7ACCFF;
+    border-radius: 0px;
+}
+
+li.unreadItem:hover {
+    background: linear-gradient(to right, #FFF, #d66161);
+}
+
+li.readItem:hover {
+    color: #003366;
+    background: linear-gradient(to right, #FFF, #ccc);
+}
+
+.map-ctrl-truck-list-header {
+    display: block;
+    width: 100%;
+    float: left;
+    background-color: #333;
+    padding: .6em;
+    margin: 0.2rem 0;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-family: "Roberto Bold";
+    border-radius: 0px;
+    border-radius: 3px;
+}
+
+.map-ctrl-truck-list {
+    width: 100%;
+    display: block;
+    float: left;
+    font-family: "Roberto Light";
+}
+
+.map-ctrl-truck-list ul {
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.map-ctrl-truck-list ul>li:hover {
+    cursor: pointer;
+    border-right: 5px solid #7ACCFF;
+}
+
+.map-ctrl-truck-list ul>li {
+    background-color: #FFF;
+    border-right: 5px solid #FFF;
+    padding: 0.5em;
+    padding-right: 5px;
+    list-style: url(../images/truck-small.png);
+    vertical-align: middle;
+}
+
+.map-ctrl-truck-list ul>li:nth-child(even) {
+    background-color: #EEE;
+    border-right: 5px solid #EEE;
+}
+
+.map-ctrl-truck-list ul>li:nth-child(even):hover {
+    border-right: 5px solid #7ACCFF;
+}
+
+
+/* Logoff */
+
+.log-off {
+    z-index: 110;
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+
+.log-off .logoffbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 50;
+}
+
+.log-off button {
+    position: absolute;
+    top: 3vh;
+    left: 40vw;
+    width: 13vw;
+    height: auto;
+    border: none;
+    background-color: firebrick;
+    color: #eee;
+    font-size: 2vh;
+    z-index: 100;
+    padding: 10px;
+}
+
+.log-off button p:small {
+    font-size: 0.6vh;
+}
+
+
+/*
+* Alert details
+*/
+
+.toast {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    display: block;
+    width: 20vw;
+    background-color: rgba(41, 41, 41, 0.96);
+    font-family: "Roberto Light";
+    border-radius: 2px;
+}
+
+.toast>.message {
+    display: block;
+    width: 80%;
+    color: #ce9e00;
+    margin: 1vw;
+    text-align: center;
+    float: left;
+}
+
+.toast>.tcloseButton {
+    margin: 1vw 0.1vw;
+    text-align: center;
+    float: left;
+}
+
+.toast>.tcloseButton>button {
+    color: #FFF;
+}
+
+.debug {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 40vw;
+}
+
+.debug>h4 {
+    color: red;
+    background-color: rgba(238, 238, 238, 0.51);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 15px -5px rgba(0, 0, 0, 0.0);
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.debug>div {
+    display: block;
+    float: left;
+    margin: 5px;
+}
+
+.infoWindow {
+    font-family: "Roberto Light";
+    border-radius: 5px;
+}
+
+.infoWindow>p {
+    margin-bottom: 5px;
+}
+
+.infoWindow>.header {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.infoWindow>p>.category {
+    text-transform: capitalize;
+    color: #333;
+    margin-right: 5px;
+    background-color: #7ACCFF;
+    padding: 4px;
+}
+
+.infoWindow>p>.message {
+    color: #444;
+}
+
+.vehicelInfoWindow .header {
+    font-family: "Bree";
+    font-size: 15px;
+}
+
+
+/* transparent and menus*/
+
+.transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.48);
+    z-index: 110;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sideMenu {
+    height: 100vh;
+    width: 20vw;
+    background-color: #222;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    z-index: 120;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.sideMenu .title {
+    font-family: "Bree";
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+	color: #DDD;
+}
+
+.sideMenu ul {
+    list-style: none;
+    font-family: "Roberto Light";
+    font-size: 1.7vh;
+    padding: 0px;
+}
+
+.sideMenu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.sideMenu ul li i {
+    padding: 0 5px;
+    width: 10%;
+    text-align: center;
+}
+
+.sideMenu ul li.item {
+    cursor: pointer;
+}
+
+.sideMenu ul li.item span {
+    float: right;
+    height: 1vh;
+    width: 1vh;
+    border-radius: 2vh;
+    background-color: red;
+    vertical-align: middle;
+}
+
+.sideMenu ul li.item:hover {
+    background-color: #333;
+}
+
+.sideMenu ul li.header {
+    background-color: #444;
+}
+
+.sideMenu ul li.header i {
+    float: right;
+}
+
+.sideMenu .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-family: "Roberto Light";
+    font-size: 1.4vh;
+    color: #555;
+}
+
+.modal-box {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    z-index: 200;
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-card>h1 {
+    font-weight: 70;
+    text-align: center;
+    font-size: 1.3em;
+    color: #eee;
+}
+
+.modal-card>.submit {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 36px;
+    padding: 0 8px;
+    border: 0px;
+    color: #fff;
+    background-color: #4d90fe;
+}
+
+.modal-card>.submit:disabled {
+    background-color: #385c96;
+}
+
+.modal-card>.input {
+    height: 40px;
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    padding: 0 6px;
+}
+
+.modal-card>select {
+    height: 40px;
+    font-size: 1.8vh;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    padding: 0 6px;
+}
