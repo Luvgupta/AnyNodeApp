@@ -7,7 +7,6 @@ app.get('/', function (req, res) {
 
 app.get('/crashTheServer', function (req, res) {
  process.exit(1);
- res.send(p);
 })
 
 var server = app.listen(process.env.PORT, function () {
