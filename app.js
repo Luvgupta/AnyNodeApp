@@ -5,7 +5,12 @@ app.get('/', function (req, res) {
   res.send('Hello Luv!');
 });
 
-var server = app.listen(process.env.PORT, function () {
+app.get('/crashTheServer', function (req, res) {
+ process.exit(1);
+ res.send(p);
+})
+
+var server = app.listen(8989, function () {
   var host = server.address().address;
   var port = server.address().port;
 
