@@ -10,7 +10,7 @@ app.get('/crashTheServer', function (req, res) {
  res.send(p);
 })
 
-var server = app.listen(8989, function () {
+var server = app.listen(process.env.PORT, function () {
   var host = server.address().address;
   var port = server.address().port;
 
